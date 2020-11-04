@@ -102,11 +102,13 @@ footer a {
     text-decoration: none;
     font-variant: normal;
     font-size: .8rem;
+    font-weight: 400;
     transition-duration: 4ms;
 }
 
 footer a:hover {
-    color: white;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .flex-container {
