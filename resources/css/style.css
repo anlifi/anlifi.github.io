@@ -1,0 +1,191 @@
+/* Reset styles */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Define light and dark palettes with CSS variables */
+
+/* Light mode */
+:root[color-mode="light"] {
+    --bg-color: #fff;
+    --box-color: #e5e5e5;
+    --font-color: #373737;
+    --a-color: #0168b7;
+}
+
+/* Dark mode */
+:root[color-mode="dark"] {
+    --bg-color: #373737;
+    --box-color: #4b4b4b;
+    --font-color: #fff;
+    --a-color: #4dc9ff;
+}
+
+/* Toggle switch */
+.mode-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.mode-switch {
+    display: inline-block;
+    height: 1.25rem;
+    position: relative;
+    width: 2.5rem;
+}
+
+.mode-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: var(--box-color);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: .25rem;
+    content: "";
+    height: .75rem;
+    left: .25rem;
+    position: absolute;
+    transition: .4s;
+    width: .75rem;
+}
+
+input:checked + .slider {
+    background-color: #44ddcc;
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.25rem);
+}
+
+.slider.round {
+    border-radius: 1.5rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* General Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;    
+    letter-spacing: .05rem;
+    font-variant: small-caps;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h3, h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: .75rem;
+}
+
+p, a {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: var(--a-color);
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 10rem;
+    background-color: #373737;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+main {
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    font-variant: small-caps;
+    letter-spacing: .05rem;
+    padding: 1rem;
+    height: 2.5rem;
+    background-color: #373737;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    display: inline;
+    color: white;
+    padding: 0 1rem;
+}
+
+footer a {
+    color: #81c2ff;
+    text-decoration: none;
+    font-variant: normal;
+    font-size: .8rem;
+    font-weight: 400;
+    transition-duration: 4ms;
+}
+
+footer a:hover {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.flex-container {
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+}
