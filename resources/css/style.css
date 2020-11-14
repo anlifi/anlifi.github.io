@@ -1,4 +1,5 @@
 /* Reset styles */
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -29,10 +30,143 @@ html {
     --a-color: #4dc9ff;
 }
 
+/* General Styles */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", sans-serif;
+    font-variant: small-caps;
+}
+
+p, a, span {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: var(--a-color);
+    font-weight: 600;
+}
+
+h2, h3, h4, h5, span {
+    letter-spacing: .05rem;
+}
+
+h1, h2, span {
+    font-weight: 700;
+}
+
+h3, h4, h5 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h3, p, span {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .75rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 3.75rem;
+    background-color: #373737;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1.5px #fff;
+}
+
+/* Logo */
+#logo-wrapper {
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    color: #373737;
+    text-decoration: none;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, .25);
+    margin-left: 3px;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+/* Mobile nav content */
+nav ul {
+    display: none;
+    background-color: #373737;
+    opacity: .98;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+}
+
+nav ul li {
+    padding: 1.5rem 4rem 0 1rem;
+}
+
+nav ul a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+#menu-icon {
+    font-size: 2rem;
+}
+
 /* Toggle switch */
+
 .mode-switch-wrapper {
     display: flex;
     align-items: center;
+    padding-right: .5rem;
 }
 
 .mode-switch {
@@ -58,7 +192,7 @@ html {
 }
 
 .slider:before {
-    background-color: #fff;
+    background-color: #373737;
     bottom: .25rem;
     content: "";
     height: .75rem;
@@ -84,108 +218,70 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/* General Styles */
-body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
-}
-
-h1, h2, h3, h4 {
-    font-family: "Montserrat", sans-serif;    
-    letter-spacing: .05rem;
-    font-variant: small-caps;
-}
-
-h1, h2 {
-    font-weight: 700;
-}
-
-h3, h4 {
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2.25rem;
-}
-
-h3 {
-    font-size: 1.125rem;
-}
-
-h4 {
-    font-size: .75rem;
-}
-
-p, a {
-    font-family: "Poppins", sans-serif;
-}
-
-a {
-    color: var(--a-color);
-    font-weight: 600;
-}
-
-/* Header */
-header {
-    width: 100%;
-    height: 10rem;
-    background-color: #373737;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sun-icon, #moon-icon {
+    padding-left: .25rem;
+    padding-right: .25rem;
+    font-size: 1rem;
 }
 
 /* Main */
+
 main {
-    min-height: 25rem;
+    width: 83%;
+    min-width: 300px;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 1.5px;
+    background-color: var(--font-color);
+}
+
+/* Home */
+
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+#profile-img1, #profile-img2 {
+    width: 86%;
+    height: 86%;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
+}
+
+#home h1, h3 {
+    padding-top: 1rem;
+}
+
+/* About */
+
+
 
 /* Footer */
+
 footer {
-    font-variant: small-caps;
-    letter-spacing: .05rem;
-    padding: 1rem;
-    height: 2.5rem;
+    width: 100%;
+    height: 3.75rem;
     background-color: #373737;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-footer p {
-    display: inline;
     color: white;
-    padding: 0 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
 }
 
-footer a {
-    color: #81c2ff;
-    text-decoration: none;
-    font-variant: normal;
-    font-size: .8rem;
-    font-weight: 400;
-    transition-duration: 4ms;
+footer h5 {
+    padding-bottom: .5rem;
 }
 
-footer a:hover {
-    font-size: .9rem;
-    font-weight: 600;
-}
-
-.flex-container {
-    display: inline-flex;
-    justify-content: center;
-    align-self: center;
+#projects img {
+    display: none;
 }

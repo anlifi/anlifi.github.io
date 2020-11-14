@@ -8,302 +8,296 @@
         <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
         <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://kit.fontawesome.com/0814ee62ac.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        
-        <div id="page" role="presentation">
+         
+        <header class="main">
             
-            <header class="main">
-                
-                <div id="logo-wrapper" role="presentation">
-                    <a id="logo" href="#home">AF</a>
+            <div id="logo-wrapper" role="presentation">
+                <a id="logo" href="#home">AF</a>
+            </div>
+
+            <nav aria-label="Main">
+                <ul id="nav-content" role="presentation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mode-switch-wrapper" role="presentation">
+                    <i id="sun-icon" class="material-icons" aria-hidden="true">wb_sunny</i>
+                    <label class="mode-switch" for="checkbox" aria-label="Toggle between light and dark mode">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                    <i id="moon-icon" class="material-icons" aria-hidden="true">bedtime</i>
                 </div>
+                <i id="menu-icon" class="fas fa-bars" aria-label="Toggle sidebar main menu"></i>
+            </nav>
 
-                <nav aria-label="Main">
-                    <ul id="nav-content" role="presentation">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="mode-switch-wrapper" role="presentation">
-                        <i id="sun-icon" class="material-icons" aria-hidden="true">wb_sunny</i>
-                        <label class="mode-switch" for="checkbox" aria-label="Toggle between light and dark mode">
-                            <input type="checkbox" id="checkbox">
-                            <div class="slider round"></div>
-                        </label>
-                        <i id="moon-icon" class="material-icons" aria-hidden="true">bedtime</i>
-                    </div>
-                    <i id="menu-icon" class="material-icons" aria-label="Toggle sidebar main menu">menu</i>
-                </nav>
+        </header>
 
-            </header>
-    
-            <main>
+        <main>
 
-                <section id="home">
-                    <div class="profile-img-wrapper" role="presentation">
-                        <img id="profile-img1" src="./resources/images/profile-img1.jpeg" aria-label="Angelina Fischer">
-                    </div>
+            <section id="home">
+                <img id="profile-img1" src="./resources/images/profile-img1.jpeg" aria-label="Angelina Fischer">
+                <div class="text-wrapper" role="presentation">
+                    <h1>Angelina Fischer</h1>
+                    <h3>Welcome to my Website</h3>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="about">
+                <div class="about-wrapper" role="presentation">
+                    <h2>About</h2>
                     <div class="text-wrapper" role="presentation">
-                        <h1>Angelina Fischer</h1>
-                        <h3>Welcome to my Website</h3>
+                        <p>My name is Angelina Fischer, I’m 26 and I am a starting web developer from Darmstadt, Germany.<br>
+                            When I finished my master in Materials Science at the Technical University Darmstadt in April 2020, 
+                            I was struggling to find a job due to the COVID-19 crisis. After realizing this is not the end of the world, 
+                            I took this as an opportunity to become a self-tought web developer!<br>
+                            <br>
+                            My goal is to become a full-stack engineer and I am currently learning about more advanced JavaScript,
+                            jQuery, React, and back-end development.</p>
                     </div>
-                </section>
-
-                <hr>
-
-                <section id="about">
-                    <div class="about-wrapper" role="presentation">
-                        <h2>About</h2>
-                        <div class="text-wrapper" role="presentation">
-                            <p>My name is Angelina Fischer, I’m 26 and I am a starting web developer from Darmstadt, Germany.<br>
-                                When I finished my master in Materials Science at the Technical University Darmstadt in April 2020, 
-                                I was struggling to find a job due to the COVID-19 crisis. After realizing this is not the end of the world, 
-                                I took this as an opportunity to become a self-tought web developer!<br>
-                                <br>
-                                My goal is to become a full-stack engineer and I am currently learning about more advanced JavaScript,
-                                jQuery, React, and back-end development.</p>
-                        </div>
-                    </div>
-                    <div class="fun-fact-wrapper box" role="presentation">
-                        <div class="glide" role="presentation">
-                            <div class="glide__track" data-glide-el="track" role="presentation">
-                              <ul class="glide__slides" role="presentation">
-                                <li class="glide__slide">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-globe-europe" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact #1</h4>
-                                    <p>I’m <strong>half German</strong>, <strong>half Chinese</strong> and I was born and raised in Germany. 
-                                        When meeting new people, I’m always curious to hear about where they think I come from. 
-                                        The guesses are manifold. What was your initial thought?</p>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-burger" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact #2</h4>
-                                    <p>I <strong>LOVE food</strong>. If I could, I would eat all day. Unfortunately, 
-                                        I am not immune against these things called calories...</p>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="material-icons" aria-hidden="true">cake</i>
-                                    </div>
-                                    <h4>Fun Fact #3</h4>
-                                    <p>I like baking cakes almost as much as eating them (see fact #1).<br>
-                                        I already baked <strong>13 cakes</strong> this year.<br>
-                                        If you want to see some of them, go check out my Instagram 
-                                        <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">an.li.fi</a>!</p>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-ruler" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact #4</h4>
-                                    <p>I do not have OCD, but I really like things to be <strong>structured</strong> and <strong>ordered</strong>. 
-                                        My clothes are ordered by type and color and I cannot stand dirt.</p>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                    </div>
-                </section>
-
-                <hr>
-
-                <section id="skills">
-                    <div class="skill-bars" role="presentation">
-                        <div class="bar" role="presentation">
-                            <div class="info" role="presentation">
-                                <span>HTML</span>
-                            </div>
-                            <div class="progess-line html" role="presentation">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="info" role="presentation">
-                                <span>CSS</span>
-                            </div>
-                            <div class="progess-line css" role="presentation">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="info" role="presentation">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="progess-line js" role="presentation">
-                                <span>30%</span>
-                            </div>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="info" role="presentation" role="presentation">
-                                <span>Git</span>
-                            </div>
-                            <div class="progess-line git">
-                                <span>20%</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <hr>
-
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <p>Here are some of my recent projects. Click on the project tile for more info.</p>
-                    <div class="project-wrapper-preview" role="presentation">
-                        <img src="./resources/images/fortune-of-the-day-300x185.png" alt="">
-                        <div class="project-content">
-                            <h4>Fortune of the Day</h4>
-                            <p>A random message generator that gives you “very” useful advice for your day!</p>
-                            <div class="languages" role="presentation">
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-wrapper-preview" role="presentation">
-                        <img src="" alt="">
-                        <div class="project-content">
-                            <h4>Portfolio Website</h4>
-                            <p>My personal portfolio website deployed with GitHub Pages. You're viewing the live version right now!</p>
-                            <div class="languages" role="presentation">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-wrapper-preview" role="presentation">
-                        <img src="" alt="">
-                        <div class="project-content">
-                            <h4>Placeholder</h4>
-                            <p>This is a placeholder description for a third project.</p>
-                            <div class="languages" role="presentation">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-wrapper-full box" role="presentation">
-                        <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
-                        <header class="project">
-                            <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
-                            <h4>Fortune of the Day</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p><strong>General Info</strong></p>
-                            <p>This is a random massage generator program. Everytime the program is run, 
-                                it prompts for the user's name and outputs today's date and a new (random) fortune of the day.<br>
-                                It is my first small project running on Node.js using JavaScript, Git and GitHub.
-                            </p>
-                            <p><strong>Technologies</strong></p>
-                            <ul role="presentation">
-                                <li>JavaScript - ECMAScript 2017</li>
-                                <li>Node.js - 12.19.0</li>
-                            </ul>
-                            <p>View project on <a href="https://github.com/anlifi/fortune_of_the_day" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-wrapper-full box" role="presentation">
-                        <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
-                        <header class="project">
-                            <img src="" alt="">
-                            <h4>Portfolio Website</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p><strong>General Info</strong></p>
-                            <p>This is my personal portfolio website. It is created with HTML5, CSS3 and JavaScript and deployed with GitHub Pages. 
-                                The website is build using a One Page design and a mobile first philosophy and it also offers the possibility 
-                                to toggle between light and dark mode. It will be updated continuously. Stay tuned for more projects.<br>
-                                You are currently viewing the live version!
-                            </p>
-                            <p><strong>Technologies</strong></p>
-                            <ul role="presentation">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript - ECMAScript 2017</li>
-                            </ul>
-                            <p>View project on <a href="https://github.com/anlifi/anlifi.github.io" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-wrapper-full box" role="presentation">
-                        <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
-                        <header class="project">
-                            <img src="" alt="">
-                            <h4>Placeholder</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p><strong>General Info</strong></p>
-                            <p>This is placeholder description for a third project.
-                            </p>
-                            <p><strong>Technologies</strong></p>
-                            <ul role="presentation">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript - ECMAScript 2017</li>
-                            </ul>
-                            <p>View project on <a href="" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <hr>
-
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <img src="./resources/images/profile-img1.jpeg" alt="Angelina Fischer">
-                    <div class="contact-content" role="presentation">
-                        <span>EMAIL ME</span>
-                        <a href="mailto:angelina.fischer93@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <span class="hr-sect">OR</span>
-                        <span>FIND ME ON</span>
-                        <div class="social-media">
-                            <a href="https://github.com/anlifi" target="_blank" aria-label="GitHub profile opens in new tab">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/angelina-fischer-a424111b0/" target="_blank" aria-label="LinkedIn profile opens in new tab">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/angelina.fischer.93" target="_blank" aria-label="Facebook profile opens in new tab">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
-    
-            <footer>
-
-                <div class="created">
-                    <h5>Created with ❤ in Darmstadt</h5>
                 </div>
-                <div class="copyright">
-                    <h5>&copy; 2020 Angelina Fischer</h5>
+                <div class="fun-fact-wrapper box" role="presentation">
+                    <div class="glide" role="presentation">
+                        <div class="glide__track" data-glide-el="track" role="presentation">
+                            <ul class="glide__slides" role="presentation">
+                            <li class="glide__slide">
+                                <div class="icon-wrapper" role="presentation">
+                                    <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                                </div>
+                                <h4>Fun Fact #1</h4>
+                                <p>I’m <strong>half German</strong>, <strong>half Chinese</strong> and I was born and raised in Germany. 
+                                    When meeting new people, I’m always curious to hear about where they think I come from. 
+                                    The guesses are manifold. What was your initial thought?</p>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="icon-wrapper" role="presentation">
+                                    <i class="fas fa-burger" aria-hidden="true"></i>
+                                </div>
+                                <h4>Fun Fact #2</h4>
+                                <p>I <strong>LOVE food</strong>. If I could, I would eat all day. Unfortunately, 
+                                    I am not immune against these things called calories...</p>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="icon-wrapper" role="presentation">
+                                    <i class="material-icons" aria-hidden="true">cake</i>
+                                </div>
+                                <h4>Fun Fact #3</h4>
+                                <p>I like baking cakes almost as much as eating them (see fact #1).<br>
+                                    I already baked <strong>13 cakes</strong> this year.<br>
+                                    If you want to see some of them, go check out my Instagram 
+                                    <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">an.li.fi</a>!</p>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="icon-wrapper" role="presentation">
+                                    <i class="fas fa-ruler" aria-hidden="true"></i>
+                                </div>
+                                <h4>Fun Fact #4</h4>
+                                <p>I do not have OCD, but I really like things to be <strong>structured</strong> and <strong>ordered</strong>. 
+                                    My clothes are ordered by type and color and I cannot stand dirt.</p>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
                 </div>
+            </section>
 
-            </footer>
+            <hr>
 
-        </div>
+            <section id="skills">
+                <div class="skill-bars" role="presentation">
+                    <div class="bar" role="presentation">
+                        <div class="info" role="presentation">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progess-line html" role="presentation">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="bar" role="presentation">
+                        <div class="info" role="presentation">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progess-line css" role="presentation">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <div class="bar" role="presentation">
+                        <div class="info" role="presentation">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progess-line js" role="presentation">
+                            <span>30%</span>
+                        </div>
+                    </div>
+                    <div class="bar" role="presentation">
+                        <div class="info" role="presentation" role="presentation">
+                            <span>Git</span>
+                        </div>
+                        <div class="progess-line git">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of my recent projects. Click on the project tile for more info.</p>
+                <div class="project-wrapper-preview" role="presentation">
+                    <img src="./resources/images/fortune-of-the-day-300x185.png" alt="">
+                    <div class="project-content">
+                        <h4>Fortune of the Day</h4>
+                        <p>A random message generator that gives you “very” useful advice for your day!</p>
+                        <div class="languages" role="presentation">
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-wrapper-preview" role="presentation">
+                    <img src="" alt="">
+                    <div class="project-content">
+                        <h4>Portfolio Website</h4>
+                        <p>My personal portfolio website deployed with GitHub Pages. You're viewing the live version right now!</p>
+                        <div class="languages" role="presentation">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-wrapper-preview" role="presentation">
+                    <img src="" alt="">
+                    <div class="project-content">
+                        <h4>Placeholder</h4>
+                        <p>This is a placeholder description for a third project.</p>
+                        <div class="languages" role="presentation">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-wrapper-full box" role="presentation">
+                    <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
+                    <header class="project">
+                        <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
+                        <h4>Fortune of the Day</h4>
+                    </header>
+                    <div class="project-content" role="presentation">
+                        <p><strong>General Info</strong></p>
+                        <p>This is a random massage generator program. Everytime the program is run, 
+                            it prompts for the user's name and outputs today's date and a new (random) fortune of the day.<br>
+                            It is my first small project running on Node.js using JavaScript, Git and GitHub.
+                        </p>
+                        <p><strong>Technologies</strong></p>
+                        <ul role="presentation">
+                            <li>JavaScript - ECMAScript 2017</li>
+                            <li>Node.js - 12.19.0</li>
+                        </ul>
+                        <p>View project on <a href="https://github.com/anlifi/fortune_of_the_day" 
+                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-wrapper-full box" role="presentation">
+                    <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
+                    <header class="project">
+                        <img src="" alt="">
+                        <h4>Portfolio Website</h4>
+                    </header>
+                    <div class="project-content" role="presentation">
+                        <p><strong>General Info</strong></p>
+                        <p>This is my personal portfolio website. It is created with HTML5, CSS3 and JavaScript and deployed with GitHub Pages. 
+                            The website is build using a One Page design and a mobile first philosophy and it also offers the possibility 
+                            to toggle between light and dark mode. It will be updated continuously. Stay tuned for more projects.<br>
+                            You are currently viewing the live version!
+                        </p>
+                        <p><strong>Technologies</strong></p>
+                        <ul role="presentation">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript - ECMAScript 2017</li>
+                        </ul>
+                        <p>View project on <a href="https://github.com/anlifi/anlifi.github.io" 
+                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-wrapper-full box" role="presentation">
+                    <button aria-label="Close project info"><i class="far fa-times-regular"></i></button>
+                    <header class="project">
+                        <img src="" alt="">
+                        <h4>Placeholder</h4>
+                    </header>
+                    <div class="project-content" role="presentation">
+                        <p><strong>General Info</strong></p>
+                        <p>This is placeholder description for a third project.
+                        </p>
+                        <p><strong>Technologies</strong></p>
+                        <ul role="presentation">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript - ECMAScript 2017</li>
+                        </ul>
+                        <p>View project on <a href="" 
+                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <img id="profile-img2" src="./resources/images/profile-img1.jpeg" aria-label="Angelina Fischer">
+                <div class="contact-content" role="presentation">
+                    <span>EMAIL ME</span>
+                    <a href="mailto:angelina.fischer93@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <span class="hr-sect">OR</span>
+                    <span>FIND ME ON</span>
+                    <div class="social-media">
+                        <a href="https://github.com/anlifi" target="_blank" aria-label="GitHub profile opens in new tab">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/angelina-fischer-a424111b0/" target="_blank" aria-label="LinkedIn profile opens in new tab">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/angelina.fischer.93" target="_blank" aria-label="Facebook profile opens in new tab">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer>
+
+            <div class="created">
+                <h5>Created with ❤ in Darmstadt</h5>
+            </div>
+            <div class="copyright">
+                <h5>&copy; 2020 Angelina Fischer</h5>
+            </div>
+
+        </footer>
 
         <script src="./resources/js/script.js"></script>
     </body>
