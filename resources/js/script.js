@@ -28,6 +28,8 @@ toggleSwitch.addEventListener('change', switchMode, false);
 // Set slider for fun facts
 new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
+    scrollLock: true,
+    scrollLockDelay: 50,
     dots: '.dots',
     draggable: true,
     arrows: {
