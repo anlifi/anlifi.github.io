@@ -24,3 +24,14 @@ function switchMode(e) {
 }
 
 toggleSwitch.addEventListener('change', switchMode, false);
+
+// Set slider for fun facts
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '.dots',
+    draggable: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+});

@@ -46,6 +46,10 @@ p, a, span {
     font-family: "Poppins", sans-serif;
 }
 
+p {
+    text-align: justify;
+}
+
 a {
     color: var(--a-color);
     font-weight: 600;
@@ -55,11 +59,11 @@ h2, h3, h4, h5, span {
     letter-spacing: .05rem;
 }
 
-h1, h2, span {
+h1, h2, h4, span {
     font-weight: 700;
 }
 
-h3, h4, h5 {
+h3, h5 {
     font-weight: 600;
 }
 
@@ -70,6 +74,7 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -240,6 +245,11 @@ hr {
     background-color: var(--font-color);
 }
 
+.box {
+    background-color: var(--box-color);
+    border-radius: 25px;
+}
+
 /* Home */
 
 #home {
@@ -262,9 +272,99 @@ hr {
     padding-top: 1rem;
 }
 
-/* About */
+/* Fun fact slider */
 
+.fun-fact-wrapper {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    max-width: 420px;
+    max-height: 325px;
+}
 
+.slide {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide .icon-wrapper {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide i {
+    font-size: 2rem;
+    color: #373737;
+}
+
+.slide h4 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.slide p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.glider-prev, .glider-next {
+    top: 40%;
+    color: var(--font-color);
+    opacity: .75;
+    transition: opacity .4s ease,
+                color .4s ease;
+}
+
+.glider-prev i, .glider-next i {
+    font-size: 2rem;
+}
+
+.glider-prev {
+    left: -10px;
+}
+
+.glider-next {
+    right: -10px;
+}
+
+.glider-prev:hover,
+.glider-next:hover,
+.glider-prev:focus,
+.glider-next:focus {
+    color: var(--font-color);
+    opacity: 1;
+}
+
+.glider-next.disabled,
+.glider-prev.disabled {
+    color: var(--font-color);
+    opacity: .25;
+}
+
+.glider-dot {
+    color: var(--font-color);
+    background: var(--font-color);
+    opacity: .25;
+    width: 10px;
+    height: 10px;
+}
+
+.glider-dot:hover,
+.glider-dot:focus,
+.glider-dot.active {
+  background: var(--font-color);
+  opacity: 1;
+}
 
 /* Footer */
 
