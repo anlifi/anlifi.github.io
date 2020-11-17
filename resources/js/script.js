@@ -1,3 +1,25 @@
+// Open and close sidebar nav
+const openBtn = document.getElementById('open-btn');
+const closeBtn = document.getElementById('close-btn');
+let navIsOpen = false;
+
+function toggleNav() {
+    if (navIsOpen) {
+        navIsOpen = false;
+        document.getElementById('open-btn').style.display = 'block';
+        document.getElementById('close-btn').style.display = 'none';
+        return document.getElementById('nav-content').style.width = '0';
+    }
+    navIsOpen = true;
+    document.getElementById('open-btn').style.display = 'none';
+    document.getElementById('close-btn').style.display = 'block';
+    return document.getElementById('nav-content').style.width = '180px';
+}
+
+openBtn.addEventListener('click', toggleNav, false);
+closeBtn.addEventListener('click', toggleNav, false);
+
+
 // Toggle switch for light and dark mode
 const toggleSwitch = document.querySelector('.mode-switch input[type="checkbox"]');
 const currentColorMode = localStorage.getItem('mode') ? localStorage.getItem('mode') : null;
@@ -32,6 +54,7 @@ new Glider(document.querySelector('.glider'), {
     scrollLockDelay: 50,
     dots: '.dots',
     draggable: true,
+    dragVelocity: 1.5,
     arrows: {
       prev: '.glider-prev',
       next: '.glider-next'
