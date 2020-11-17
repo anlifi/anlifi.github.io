@@ -1,19 +1,20 @@
 // Open and close sidebar nav
 const openBtn = document.getElementById('open-btn');
 const closeBtn = document.getElementById('close-btn');
+const sidebar = document.getElementById('nav-content');
 let navIsOpen = false;
 
 function toggleNav() {
     if (navIsOpen) {
         navIsOpen = false;
-        document.getElementById('open-btn').style.display = 'block';
-        document.getElementById('close-btn').style.display = 'none';
-        return document.getElementById('nav-content').style.width = '0';
+        openBtn.style.display = 'block';
+        closeBtn.style.display = 'none';
+        return sidebar.style.width = '0';
     }
     navIsOpen = true;
-    document.getElementById('open-btn').style.display = 'none';
-    document.getElementById('close-btn').style.display = 'block';
-    return document.getElementById('nav-content').style.width = '180px';
+    openBtn.style.display = 'none';
+    closeBtn.style.display = 'block';
+    return sidebar.style.width = '180px';
 }
 
 openBtn.addEventListener('click', toggleNav, false);
