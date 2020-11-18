@@ -307,7 +307,7 @@ hr {
     flex-direction: column;
 }
 
-#profile-img1, #profile-img2 {
+#profile-img1 {
     width: 86%;
     height: 86%;
     max-width: 450px;
@@ -661,7 +661,12 @@ hr {
 /* Contact */
 
 #profile-img2 {
-    display: none;
+    width: 40%;
+    height: 40%;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .contact-content span {
