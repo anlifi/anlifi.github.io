@@ -42,7 +42,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: "Montserrat", sans-serif;
-    font-variant: small-caps;
+    /* text-transform: uppercase; */
 }
 
 p, a, span {
@@ -50,7 +50,7 @@ p, a, span {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
 }
 
 a {
@@ -69,11 +69,11 @@ h2, h3, h4, h5, span {
     letter-spacing: .05rem;
 }
 
-h1, h2, h4, span {
+h1, h2, h3, h4, span {
     font-weight: 700;
 }
 
-h3, h5 {
+h5 {
     font-weight: 600;
 }
 
@@ -168,10 +168,9 @@ nav {
     font-weight: 600;
     letter-spacing: .05rem;
     text-decoration: none;
-    font-variant: small-caps;
     color: #fff;
     display: block;
-    padding: 1.5rem 4rem 0 1rem;
+    padding: 1.5rem 4rem .5rem 1rem;
     transition: .4s;
 }
 
@@ -269,6 +268,16 @@ input:checked + .slider:before {
 }
 
 /* Main */
+
+#overlay {
+    width: 0;
+    height: 100%;
+    background-color: #373737;
+    opacity: .98;
+    z-index: 2;
+    position: fixed;
+    top: 3.75rem;
+}
 
 main {
     width: 83%;
@@ -566,7 +575,8 @@ hr {
     -webkit-overflow-scrolling: touch;
     position: fixed;
     z-index: 2;
-    top: 70px;
+    top: 50%;
+    transform: translate(0, -45%);
 }
 
 @media only screen and (min-height: 570px) {
