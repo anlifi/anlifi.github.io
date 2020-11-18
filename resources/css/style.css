@@ -83,7 +83,7 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -279,7 +279,7 @@ main {
 hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    height: 1.5px;
+    height: 2px;
     background-color: var(--font-color);
 }
 
@@ -510,7 +510,7 @@ hr {
 
 .project-wrapper-preview img {
     height: 100%;
-    opacity: .6;
+    opacity: .9;
     grid-row: 1;
     grid-column: 1;
 }
@@ -583,7 +583,7 @@ hr {
 
 .project-wrapper-full header.project img {
     height: 100%;
-    opacity: .5;
+    opacity: .9;
     grid-area: 1 / 1;
 }
 
@@ -625,6 +625,56 @@ hr {
 
 #p-one, #p-two, #p-three {
     display: none;
+}
+
+/* Contact */
+
+#profile-img2 {
+    display: none;
+}
+
+.contact-content span {
+    display: block;
+    margin: 1rem auto;
+}
+
+.contact-content a {
+    color: var(--font-color);
+    font-size: 2rem;
+}
+
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: var(--font-color);
+    margin: 8px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    width: 65%;
+    margin: 2rem auto;
+}
+
+.hr-sect:before,
+.hr-sect:after {
+    content: "";
+    flex-grow: 1;
+    background: var(--font-color);
+    height: 1.5px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+
+.social-media a {
+    padding: 0 .25rem;
+}
+
+.contact-content a:hover,
+.contact-content a:focus,
+.contact-content a:active {
+    color: var(--a-color);
+    text-decoration: none;
 }
 
 /* Footer */
