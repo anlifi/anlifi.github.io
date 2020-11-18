@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 400;
+    scroll-padding-top: 5rem;
 }
 
 *,
@@ -310,6 +311,15 @@ hr {
     padding-top: 1rem;
 }
 
+/* About */
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Fun fact slider */
 
 .fun-fact-wrapper {
@@ -319,6 +329,8 @@ hr {
     height: auto;
     max-width: 420px;
     max-height: 325px;
+    display: block;
+    overflow: hidden;
 }
 
 .slide {
@@ -409,6 +421,7 @@ hr {
 .skill {
     margin-bottom: 1.5rem;
     width: 100%;
+    max-width: 640px;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -544,7 +557,9 @@ hr {
 }
 
 .project-wrapper-full {
-    width: 295px;
+    width: 83%;
+    min-width: 300px;
+    max-width: 420px;
     min-height: 490px;
     max-height: 500px;
     overflow: auto;
@@ -552,6 +567,12 @@ hr {
     position: fixed;
     z-index: 2;
     top: 70px;
+}
+
+@media only screen and (min-height: 570px) {
+    .project-wrapper-full {
+        max-height: 540px;
+    }
 }
 
 .project-wrapper-full .project-close-btn {
