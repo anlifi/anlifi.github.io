@@ -628,6 +628,16 @@ hr {
     margin-bottom: 2rem;
 }
 
+#projects p span {
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 1000px) {
+    #projects p span {
+        display: none;
+    }
+}
+
 .projects-wrapper {
     display: flex;
     flex-direction: column;
