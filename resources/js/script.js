@@ -72,29 +72,36 @@ const projectThree = document.getElementById('p-three');
 const closeProjectOne = document.getElementById('close-p-one');
 const closeProjectTwo = document.getElementById('close-p-two');
 const closeProjectThree = document.getElementById('close-p-three');
+const overlay = document.getElementById('overlay');
 
 
 function openPopupOne() {
+    overlay.style.width = '100%';
     projectOne.style.display = 'block';
 }
 
 function openPopupTwo() {
+    overlay.style.width = '100%';
     projectTwo.style.display = 'block';
 }
 
 function openPopupThree() {
+    overlay.style.width = '100%';
     projectThree.style.display = 'block';
 }
 
 function closePopupOne() {
+    overlay.style.width = '0';
     projectOne.style.display = 'none';
 }
 
 function closePopupTwo() {
+    overlay.style.width = '0';
     projectTwo.style.display = 'none';
 }
 
 function closePopupThree() {
+    overlay.style.width = '0';
     projectThree.style.display = 'none';
 }
 
