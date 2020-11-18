@@ -61,3 +61,46 @@ new Glider(document.querySelector('.glider'), {
       next: '.glider-next'
     }
 });
+
+// Add popup for project details
+const projectOneBtn = document.getElementById('p-one-btn');
+const projectTwoBtn = document.getElementById('p-two-btn');
+const projectThreeBtn = document.getElementById('p-three-btn');
+const projectOne = document.getElementById('p-one');
+const projectTwo = document.getElementById('p-two');
+const projectThree = document.getElementById('p-three');
+const closeProjectOne = document.getElementById('close-p-one');
+const closeProjectTwo = document.getElementById('close-p-two');
+const closeProjectThree = document.getElementById('close-p-three');
+
+
+function openPopupOne() {
+    projectOne.style.display = 'block';
+}
+
+function openPopupTwo() {
+    projectTwo.style.display = 'block';
+}
+
+function openPopupThree() {
+    projectThree.style.display = 'block';
+}
+
+function closePopupOne() {
+    projectOne.style.display = 'none';
+}
+
+function closePopupTwo() {
+    projectTwo.style.display = 'none';
+}
+
+function closePopupThree() {
+    projectThree.style.display = 'none';
+}
+
+projectOneBtn.addEventListener('click', openPopupOne, false);
+projectTwoBtn.addEventListener('click', openPopupTwo, false);
+projectThreeBtn.addEventListener('click', openPopupThree, false);
+closeProjectOne.addEventListener('click', closePopupOne, false);
+closeProjectTwo.addEventListener('click', closePopupTwo, false);
+closeProjectThree.addEventListener('click', closePopupThree, false);

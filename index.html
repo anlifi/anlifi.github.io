@@ -193,7 +193,7 @@
             <section id="projects">
                 <h2>Projects</h2>
                 <p>Here are some of my recent projects. Click on the project tile for more info.</p>
-                <div class="project-wrapper-preview" role="presentation">
+                <div id="p-one-btn" class="project-wrapper-preview" role="presentation">
                     <img src="./resources/images/fortune-of-the-day-300x185.png" alt="">
                     <div class="project-content">
                         <h4>Fortune of the Day</h4>
@@ -203,7 +203,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-wrapper-preview" role="presentation">
+                <div id="p-one" class="project-wrapper-full box" role="presentation">
+                    <button id="close-p-one" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
+                    <header class="project">
+                        <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
+                        <h4>Fortune of the Day</h4>
+                    </header>
+                    <div class="project-content" role="presentation">
+                        <p class="heading">General Info</p>
+                        <p>This is a random massage generator program. Everytime the program is run, 
+                            it prompts for the user's name and outputs today's date and a new (random) fortune of the day.<br>
+                            It is my first small project running on Node.js using JavaScript, Git and GitHub.
+                        </p>
+                        <p class="heading">Technologies</p>
+                        <ul role="presentation">
+                            <li>JavaScript - ECMAScript 2017</li>
+                            <li>Node.js - 12.19.0</li>
+                        </ul>
+                        <p id="view-p">View project on <a href="https://github.com/anlifi/fortune_of_the_day" 
+                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="p-two-btn" class="project-wrapper-preview" role="presentation">
                     <img src="" alt="">
                     <div class="project-content">
                         <h4>Portfolio Website</h4>
@@ -215,7 +237,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-wrapper-preview" role="presentation">
+                <div id="p-two" class="project-wrapper-full box" role="presentation">
+                    <button id="close-p-two" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
+                    <header class="project">
+                        <img src="" alt="">
+                        <h4>Portfolio Website</h4>
+                    </header>
+                    <div class="project-content" role="presentation">
+                        <p class="heading">General Info</p>
+                        <p>This is my personal portfolio website. It is created with HTML5, CSS3 and JavaScript and deployed with GitHub Pages. 
+                            The website is build using a One Page design and a mobile first philosophy and it also offers the possibility 
+                            to toggle between light and dark mode. It will be updated continuously. Stay tuned for more projects.<br>
+                            You are currently viewing the live version!
+                        </p>
+                        <p class="heading">Technologies</p>
+                        <ul role="presentation">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript - ECMAScript 2017</li>
+                        </ul>
+                        <p id="view-p">View project on <a href="https://github.com/anlifi/anlifi.github.io" 
+                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="p-three-btn" class="project-wrapper-preview" role="presentation">
                     <img src="" alt="">
                     <div class="project-content">
                         <h4>Placeholder</h4>
@@ -227,69 +273,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-wrapper-full box" role="presentation">
-                    <button aria-label="Close project info"><i class="fas fa-times"></i></button>
-                    <header class="project">
-                        <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
-                        <h4>Fortune of the Day</h4>
-                    </header>
-                    <div class="project-content" role="presentation">
-                        <p><strong>General Info</strong></p>
-                        <p>This is a random massage generator program. Everytime the program is run, 
-                            it prompts for the user's name and outputs today's date and a new (random) fortune of the day.<br>
-                            It is my first small project running on Node.js using JavaScript, Git and GitHub.
-                        </p>
-                        <p><strong>Technologies</strong></p>
-                        <ul role="presentation">
-                            <li>JavaScript - ECMAScript 2017</li>
-                            <li>Node.js - 12.19.0</li>
-                        </ul>
-                        <p>View project on <a href="https://github.com/anlifi/fortune_of_the_day" 
-                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-wrapper-full box" role="presentation">
-                    <button aria-label="Close project info"><i class="fas fa-times"></i></button>
-                    <header class="project">
-                        <img src="" alt="">
-                        <h4>Portfolio Website</h4>
-                    </header>
-                    <div class="project-content" role="presentation">
-                        <p><strong>General Info</strong></p>
-                        <p>This is my personal portfolio website. It is created with HTML5, CSS3 and JavaScript and deployed with GitHub Pages. 
-                            The website is build using a One Page design and a mobile first philosophy and it also offers the possibility 
-                            to toggle between light and dark mode. It will be updated continuously. Stay tuned for more projects.<br>
-                            You are currently viewing the live version!
-                        </p>
-                        <p><strong>Technologies</strong></p>
-                        <ul role="presentation">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript - ECMAScript 2017</li>
-                        </ul>
-                        <p>View project on <a href="https://github.com/anlifi/anlifi.github.io" 
-                            target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-wrapper-full box" role="presentation">
-                    <button aria-label="Close project info"><i class="fas fa-times"></i></button>
+                <div id="p-three" class="project-wrapper-full box" role="presentation">
+                    <button id="close-p-three" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
                     <header class="project">
                         <img src="" alt="">
                         <h4>Placeholder</h4>
                     </header>
                     <div class="project-content" role="presentation">
-                        <p><strong>General Info</strong></p>
+                        <p class="heading">General Info</p>
                         <p>This is placeholder description for a third project.
                         </p>
-                        <p><strong>Technologies</strong></p>
+                        <p class="heading">Technologies</p>
                         <ul role="presentation">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript - ECMAScript 2017</li>
                         </ul>
-                        <p>View project on <a href="" 
+                        <p id="view-p">View project on <a href="" 
                             target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
                         </p>
                     </div>

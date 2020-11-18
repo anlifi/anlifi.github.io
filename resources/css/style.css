@@ -55,6 +55,13 @@ p {
 a {
     color: var(--a-color);
     font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
 }
 
 h2, h3, h4, h5, span {
@@ -107,7 +114,7 @@ header.main {
     align-items: center;
     border-bottom: solid 1.5px #fff;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 0;
 }
 
@@ -150,7 +157,7 @@ nav {
     position: fixed;
     top: 3.75rem;
     right: 0;
-    z-index: 1;
+    z-index: 4;
     transition: 0.5s;
 }
 
@@ -164,17 +171,17 @@ nav {
     color: #fff;
     display: block;
     padding: 1.5rem 4rem 0 1rem;
-    transition: 0.4s;
+    transition: .4s;
 }
 
 .sidebar a:hover,
 .sidebar a:focus,
 .sidebar a:active {
-    color: #4dc9ff;
+    text-decoration: underline;
 }
 
 #open-btn, #close-btn {
-    background-color: #373737;
+    background: none;
     border: none;
     cursor: pointer;
 }
@@ -393,8 +400,8 @@ hr {
 .glider-dot:hover,
 .glider-dot:focus,
 .glider-dot.active {
-  background: var(--font-color);
-  opacity: 1;
+    background: var(--font-color);
+    opacity: 1;
 }
 
 /* Skills */
@@ -452,24 +459,172 @@ hr {
     opacity: 1;
 }
 
-.delighter.started .progress-line.html {
+.delighter.started .html {
     width: 80%;
 }
 
-.delighter.started .progress-line.css {
+.delighter.started .css {
     width: 60%;
 }
 
-.delighter.started .progress-line.js {
+.delighter.started .js {
     width: 30%;
 }
 
-.delighter.started .progress-line.git {
+.delighter.started .git {
     width: 20%;
 }
 
 .delighter.started .progress-line.py {
     width: 20%;
+}
+
+/* Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#projects p {
+    margin-bottom: 2rem;
+}
+
+.project-wrapper-preview {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    min-height: 185px;
+    max-width: 420px;
+    max-height: 325px;
+    background: #000;
+    overflow: hidden;
+    border-radius: 25px;
+    display: grid;
+    grid-template: 100% / 100%;
+}
+
+.project-wrapper-preview img {
+    height: 100%;
+    opacity: .6;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.project-wrapper-preview .project-content {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-wrapper-preview .project-content p {
+    margin: 1rem auto;
+}
+
+#projects .languages {
+    align-self: flex-start;
+    margin-bottom: .5rem;
+}
+
+#projects .languages span {
+    background-color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 5px;
+    color: #373737;
+    margin-right: .25rem;
+}
+
+.project-wrapper-full {
+    width: 295px;
+    min-height: 490px;
+    max-height: 500px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    z-index: 2;
+    top: 70px;
+}
+
+.project-wrapper-full .project-close-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 1rem auto auto;
+    right: 0;
+    z-index: 2;
+}
+
+.project-wrapper-full .project-close-btn:hover,
+.project-wrapper-full .project-close-btn:focus,
+.project-wrapper-full .project-close-btn:active {
+    color: #4dc9ff;
+    cursor: pointer;
+}
+
+.project-wrapper-full header.project {
+    background-color: #000;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    display: grid;
+    grid-template: 100% / 100%;
+}
+
+.project-wrapper-full header.project img {
+    height: 100%;
+    opacity: .5;
+    grid-area: 1 / 1;
+}
+
+.project-wrapper-full header.project h4 {
+    color: #fff;
+    z-index: 2;
+    grid-area: 1 / 1;
+    margin-top: 55px;
+}
+
+.project-wrapper-full .project-content {
+    width: 90%;
+    overflow: auto;
+    margin: 1rem auto;
+}
+
+.project-wrapper-full .project-content p,
+.project-wrapper-full .project-content ul {
+    margin-bottom: 1.5rem !important;
+    text-align: left;
+}
+
+.project-wrapper-full .project-content .heading {
+    margin-bottom: .5rem !important;
+    font-weight: 600;
+}
+
+.project-wrapper-full .project-content ul {
+    list-style: disc;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+#view-p {
+    margin-bottom: .5rem !important;
+}
+
+#p-one, #p-two, #p-three {
+    display: none;
 }
 
 /* Footer */
@@ -486,8 +641,4 @@ footer {
 
 footer h5 {
     padding-bottom: .5rem;
-}
-
-#projects img {
-    display: none;
 }
