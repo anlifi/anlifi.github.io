@@ -418,7 +418,7 @@ hr {
 
 /* Fun fact slider */
 
-.fun-fact-wrapper {
+.swiper-container {
     margin-top: 2rem;
     padding: 1rem;
     width: auto;
@@ -430,12 +430,30 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
-    .fun-fact-wrapper {
+    .swiper-container {
         width: 50%;
         margin-top: 0;
         margin-left: 1rem;
     }
 }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: start;
+    align-items: flex-start;
+  }
 
 .slide {
     max-width: 85%;
@@ -471,53 +489,27 @@ hr {
     margin-bottom: 1rem;
 }
 
-.glider-prev, .glider-next {
-    top: 40%;
+.swiper-button-prev, 
+.swiper-button-next {
     color: var(--font-color);
-    opacity: .75;
-    transition: opacity .4s ease,
-                color .4s ease;
 }
 
-.glider-prev i, .glider-next i {
-    font-size: 3rem;
+.swiper-button-prev {
+    left: .25rem;
 }
 
-.glider-prev {
-    left: -10px;
+.swiper-button-next {
+    right: .25rem;
 }
 
-.glider-next {
-    right: -10px;
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    font-size: 1.5rem;
 }
 
-.glider-prev:hover,
-.glider-next:hover,
-.glider-prev:focus,
-.glider-next:focus {
-    color: var(--font-color);
-    opacity: 1;
-}
-
-.glider-next.disabled,
-.glider-prev.disabled {
-    color: var(--font-color);
-    opacity: .25;
-}
-
-.glider-dot {
-    color: var(--font-color);
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
     background: var(--font-color);
-    opacity: .25;
-    width: 10px;
-    height: 10px;
-}
-
-.glider-dot:hover,
-.glider-dot:focus,
-.glider-dot.active {
-    background: var(--font-color);
-    opacity: 1;
 }
 
 /* Skills */
@@ -586,6 +578,8 @@ hr {
 .delighter .progress-line {
     display: block; 
     transition: all 2s ease-out; 
+    -moz-transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
     opacity: 0;
     width: 1px; 
     overflow: hidden;

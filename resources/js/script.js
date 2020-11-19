@@ -49,17 +49,17 @@ function switchMode(e) {
 toggleSwitch.addEventListener('change', switchMode, false);
 
 // Set slider for fun facts
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
-    scrollLock: true,
-    scrollLockDelay: 50,
-    dots: '.dots',
-    draggable: true,
-    dragVelocity: 1.5,
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    }
+const swiper = new Swiper('.swiper-container', {
+    grabCursor: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+    },
 });
 
 // Add popup for project details
