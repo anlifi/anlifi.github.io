@@ -671,8 +671,8 @@ hr {
 }
 
 .project-wrapper-preview img {
-    height: 100%;
-    opacity: .9;
+    width: 100%;
+    opacity: .6;
     grid-row: 1;
     grid-column: 1;
 }
