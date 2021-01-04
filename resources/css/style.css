@@ -117,6 +117,7 @@ h5, strong {
 
 p, span {
     font-size: 1rem;
+    line-height: 1.1;
 }
 
 h5 {
@@ -721,6 +722,10 @@ hr {
     z-index: 2;
     top: 50%;
     transform: translate(0, -45%);
+}
+
+.project-wrapper-full::-webkit-scrollbar {
+  width: 0;
 }
 
 @media only screen and (min-height: 570px) {
