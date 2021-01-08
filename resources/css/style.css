@@ -599,14 +599,18 @@ hr {
 }
 
 .delighter.started .js {
-    width: 30%;
+    width: 50%;
 }
 
-.delighter.started .git {
+.delighter.started .react {
     width: 20%;
 }
 
 .delighter.started .progress-line.py {
+    width: 30%;
+}
+
+.delighter.started .git {
     width: 20%;
 }
 
