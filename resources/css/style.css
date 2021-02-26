@@ -614,6 +614,10 @@ hr {
     width: 20%;
 }
 
+.delighter.started .sql {
+    width: 20%;
+}
+
 /* Projects */
 
 #projects {
@@ -691,6 +695,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: .5rem;
 }
 
 .project-wrapper-preview .project-content p {
