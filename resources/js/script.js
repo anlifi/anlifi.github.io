@@ -49,7 +49,7 @@ function switchMode(e) {
 toggleSwitch.addEventListener('change', switchMode, false);
 
 // Set slider for fun facts
-const swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.mySwiper', {
     grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
