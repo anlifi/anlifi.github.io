@@ -8,7 +8,7 @@
 * [Contact](#contact)
 
 ## General Info
-This is my personal homepage. It is created with HTML5, CSS3 and JavaScript and deployed with GitHub Pages. 
+This is my personal homepage. It is created with HTML5, CSS3 and JavaScript and deployed on GitHub Pages. 
 
 I wanted to keep things simple, so I decided to go for a One Page design. Also, since it's all about responsiveness these days, the website is built with a mobile first philosophy and it also offers the possibility to toggle between light and dark mode.
 
