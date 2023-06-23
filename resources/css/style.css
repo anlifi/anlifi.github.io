@@ -841,7 +841,7 @@ hr {
 }
 
 .project-wrapper-full header.project img {
-    height: 100%;
+    width: 100%;
     opacity: .9;
     grid-area: 1 / 1;
 }
