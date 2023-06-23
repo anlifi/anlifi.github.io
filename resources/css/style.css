@@ -544,10 +544,33 @@ hr {
     align-content: center;
 }
 
+.skill .icon {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.skill .icon.bg {
+    background-color: #373737;
+    border-radius: 5px;
+    display: flex;
+}
+
 .skill i {
     display: inline-block;
     font-size: 3rem;
     margin-right: .5rem;
+}
+
+.skill i.fa-sass, .skill i.fa-aws {
+    font-size: 2.5rem;
+}
+
+.skill i.fa-django {
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    width: auto;
+    margin: auto;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -603,33 +626,46 @@ hr {
     opacity: 1;
 }
 
-.delighter.started .html {
+.delighter.started .py {
     width: 80%;
 }
 
-.delighter.started .css {
+.delighter.started .aws {
+    width: 70%;
+}
+
+.delighter.started .html {
     width: 60%;
 }
 
+.delighter.started .css {
+    width: 50%;
+}
+
+.delighter.started .sass {
+    width: 30%;
+}
+
 .delighter.started .js {
-    width: 50%;
-}
-
-.delighter.started .react {
-    width: 20%;
-}
-
-.delighter.started .py {
-    width: 50%;
+    width: 40%;
 }
 
 .delighter.started .git {
-    width: 20%;
+    width: 50%;
 }
 
 .delighter.started .sql {
-    width: 20%;
+    width: 40%;
 }
+
+.delighter.started .django {
+    width: 40%;
+}
+
+.delighter.started .react {
+    width: 10%;
+}
+
 
 /* Projects */
 
