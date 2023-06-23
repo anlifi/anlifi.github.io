@@ -1,382 +1,401 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="light">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Angelina Fischer - Personal Portfolio Website</title>
-        <meta name="description" content="M.Sc. Materials Science graduate based in Darmstadt, Germany. Currently teaching herself some web development and data science.">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <script src="https://kit.fontawesome.com/0814ee62ac.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>Angelina Fischer - Personal Portfolio Website</title>
+  <meta name="description"
+    content="M.Sc. Materials Science graduate based in Darmstadt, Germany. Currently teaching herself some web development and data science.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/0814ee62ac.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        
-        <header class="main">
-            
-            <div id="logo-wrapper" role="presentation">
-                <a id="logo" href="#home">AF</a>
+<body>
+
+  <header class="main">
+
+    <div id="logo-wrapper" role="presentation">
+      <a id="logo" href="#home">AF</a>
+    </div>
+
+    <nav aria-label="Main">
+      <div id="nav-content" class="sidebar" role="presentation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="mode-switch-wrapper" role="presentation">
+        <i id="sun-icon" class="material-icons" aria-hidden="true">wb_sunny</i>
+        <label class="mode-switch" for="checkbox" aria-label="Toggle between light and dark mode">
+          <input type="checkbox" id="checkbox">
+          <div class="slider round"></div>
+        </label>
+        <i id="moon-icon" class="material-icons" aria-hidden="true">bedtime</i>
+      </div>
+      <button id="open-btn" aria-label="Open sidebar main menu"><i id="menu-icon" aria-hidden="true"
+          class="fas fa-bars"></i></button>
+      <button id="close-btn" aria-label="Close sidebar main menu"><i id="close-icon" aria-hidden="true"
+          class="fas fa-times"></i></button>
+    </nav>
+
+  </header>
+
+  <div id="overlay"></div>
+  <main>
+
+    <section id="home">
+      <img id="profile-img1" src="./resources/images/profile-img1.jpeg" alt="Angelina Fischer">
+      <div class="text-wrapper" role="presentation">
+        <h1>Angelina Fischer</h1>
+        <h3>Welcome to my Website</h3>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-wrapper" role="presentation">
+        <div class="text-wrapper" role="presentation">
+          <p>
+            My name is Angelina Fischer, I'm 29 and I am a Materials Science graduate from Darmstadt, Germany.<br>
+            When I finished my master studies at the Technical University Darmstadt in April 2020,
+            I was struggling to find a job due to the COVID-19 crisis. After realizing this is not the end of the world,
+            I took this as an opportunity to extend my tech skills and knowledge and started looking into web
+            delevopment and data science!<br>
+            <br>
+            Currently, topics I want to learn more about include machine learning, more advanced front-end development,
+            and back-end development.
+          </p>
+        </div>
+        <div class="swiper-container box" role="presentation">
+          <div class="swiper-wrapper" role="presentation">
+            <div class="swiper-slide" role="presentation">
+              <div class="slide" role="presentation">
+                <div class="icon-wrapper" role="presentation">
+                  <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                </div>
+                <h4>Fun Fact 1</h4>
+                <p>
+                  I'm <strong>half German</strong>, <strong>half Chinese</strong> and I was born and raised in Germany.
+                  When meeting new people, I'm always curious to hear about where they think I come from.
+                  The guesses are manifold. What was your initial thought?
+                </p>
+              </div>
             </div>
-
-            <nav aria-label="Main">
-                <div id="nav-content" class="sidebar" role="presentation">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+            <div class="swiper-slide" role="presentation">
+              <div class="slide" role="presentation">
+                <div class="icon-wrapper" role="presentation">
+                  <i class="fas fa-hamburger" aria-hidden="true"></i>
                 </div>
-                <div class="mode-switch-wrapper" role="presentation">
-                    <i id="sun-icon" class="material-icons" aria-hidden="true">wb_sunny</i>
-                    <label class="mode-switch" for="checkbox" aria-label="Toggle between light and dark mode">
-                        <input type="checkbox" id="checkbox">
-                        <div class="slider round"></div>
-                    </label>
-                    <i id="moon-icon" class="material-icons" aria-hidden="true">bedtime</i>
-                </div>
-                <button id="open-btn" aria-label="Open sidebar main menu"><i id="menu-icon" aria-hidden="true" class="fas fa-bars"></i></button>
-                <button id="close-btn" aria-label="Close sidebar main menu"><i id="close-icon" aria-hidden="true" class="fas fa-times"></i></button>
-            </nav>
-
-        </header>
-
-        <div id="overlay"></div>
-        <main>
-
-            <section id="home">
-                <img id="profile-img1" src="./resources/images/profile-img1.jpeg" alt="Angelina Fischer">
-                <div class="text-wrapper" role="presentation">
-                    <h1>Angelina Fischer</h1>
-                    <h3>Welcome to my Website</h3>
-                </div>
-            </section>
-
-            <hr>
-
-            <section id="about">
-                <h2>About</h2>
-                <div class="about-wrapper" role="presentation">
-                    <div class="text-wrapper" role="presentation">
-                        <p>
-                            My name is Angelina Fischer, I’m 27 and I am a Materials Science graduate from Darmstadt, Germany.<br>
-                            When I finished my master studies at the Technical University Darmstadt in April 2020,
-                            I was struggling to find a job due to the COVID-19 crisis. After realizing this is not the end of the world,
-                            I took this as an opportunity to extend my tech skills and knowledge and started looking into web delevopment and data science!<br>
-                            <br>
-                            Currently, topics I want to learn more about include machine learning, more advanced front-end development, and back-end development.
-                        </p>
-                    </div>
-                    <div class="swiper-container box" role="presentation">
-                        <div class="swiper-wrapper" role="presentation">
-                            <div class="swiper-slide" role="presentation">
-                                <div class="slide" role="presentation">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-globe-europe" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact 1</h4>
-                                    <p>
-                                        I’m <strong>half German</strong>, <strong>half Chinese</strong> and I was born and raised in Germany. 
-                                        When meeting new people, I’m always curious to hear about where they think I come from. 
-                                        The guesses are manifold. What was your initial thought?
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="presentation">
-                                <div class="slide" role="presentation">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-hamburger" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact 2</h4>
-                                    <p>
-                                        I <strong>LOVE food</strong>. If I could, I would eat all day. Unfortunately, 
-                                        I am not immune against these things called calories...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="presentation">
-                                <div class="slide" role="presentation">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="material-icons" aria-hidden="true">cake</i>
-                                    </div>
-                                    <h4>Fun Fact 3</h4>
-                                    <p>
-                                        I like baking cakes almost as much as eating them (see fun fact 2). 
-                                        I baked at least <strong>17 cakes</strong> in 2020.<br>
-                                        If you want to see some of them, go check out my Instagram 
-                                        <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">an.li.fi</a>!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="presentation">
-                                <div class="slide" role="presentation">
-                                    <div class="icon-wrapper" role="presentation">
-                                        <i class="fas fa-ruler" aria-hidden="true"></i>
-                                    </div>
-                                    <h4>Fun Fact 4</h4>
-                                    <p>
-                                        I do not have OCD, but I really like things to be <strong>structured</strong> and <strong>ordered</strong>. 
-                                        My clothes are ordered by type and color and I cannot stand dirt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev" aria-label="Next" role="button"></div>
-                        <div class="swiper-button-next" aria-label="Previous" role="button"></div>
-                        <div class="swiper-pagination" role="tablist"></div>
-                    </div>
-                </div>
-            </section>
-
-            <hr>
-
-            <section id="skills" data-delighter>
-                <h2>Skills</h2>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-html5" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>HTML5</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line html" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>CSS3</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line css" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-js-square" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line js" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-react" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>React</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line react" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-python" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>Python</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line py" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fab fa-git-alt" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>Git</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line git" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill" role="presentation">
-                    <i class="fas fa-database" aria-hidden="true"></i>
-                    <div class="skill-bar" role="presentation">
-                        <div class="info" role="presentation">
-                            <span>SQL</span>
-                        </div>
-                        <div class="bar" role="presentation">
-                            <div class="progress-line sql" role="presentation"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Here are some of my recent projects. <span>Click on the project tile for more info.</span></p>
-                <div class="projects-wrapper">
-                    <div id="p-one-btn" class="project-wrapper-preview" role="presentation">
-                        <img src="./resources/images/fortune-of-the-day-300x185.png" alt="">
-                        <div class="project-content">
-                            <h4>Fortune of the Day</h4>
-                            <p>A random message generator that gives you “very” useful advice for your day!</p>
-                            <div class="languages" role="presentation">
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="p-one" class="project-wrapper-full box" role="presentation">
-                        <button id="close-p-one" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
-                        <header class="project">
-                            <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
-                            <h4>Fortune of the Day</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p class="heading">General Info</p>
-                            <p>
-                                This is my first small project running on Node.js using JavaScript, Git and GitHub.<br>
-                                <br>
-                                It is a random massage generator program. Everytime the program is run, 
-                                it prompts for the user's name and outputs today's date and a new (random) fortune of the day.
-                            </p>
-                            <p class="heading">Technologies</p>
-                            <ul role="presentation">
-                                <li>JavaScript - ECMAScript 2017</li>
-                                <li>Node.js - 12.19.0</li>
-                            </ul>
-                            <p id="view-p">View project on <a href="https://github.com/anlifi/fortune_of_the_day" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div id="p-two-btn" class="project-wrapper-preview" role="presentation">
-                        <img src="./resources/images/twitch-300x185.png" alt="">
-                        <div class="project-content">
-                            <h4>Twitch Data</h4>
-                            <p>A little exploratory data analysis project using Twitch data.</p>
-                            <div class="languages" role="presentation">
-                                <span>Python</span>
-                                <span>SQL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="p-two" class="project-wrapper-full box" role="presentation">
-                        <button id="close-p-two" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
-                        <header class="project">
-                            <img src="./resources/images/twitch-300x120.png" alt="">
-                            <h4>Twitch Data</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p class="heading">General Info</p>
-                            <p>
-                                This is my first little data analysis project using Twitch streaming and chat data (2015-01-01).<br>
-                                <br>
-                                The project is divided into two parts. One part is focused on analysing the data with SQL (SQLite). 
-                                The other part is focused on visualizing the data with Python (Matplotlib).
-                            </p>
-                            <p class="heading">Technologies</p>
-                            <ul role="presentation">
-                                <li>Python - 3.8.5</li>
-                                <li>SQLite - 3.33.0</li>
-                            </ul>
-                            <p id="view-p">View project on <a href="https://github.com/anlifi/twitch" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div id="p-three-btn" class="project-wrapper-preview" role="presentation">
-                        <img src="./resources/images/life_expectancy_gdp-300x185.png" alt="">
-                        <div class="project-content">
-                            <h4>GDP vs Life Expectancy</h4>
-                            <p>A little exploratory data analysis project using GDP and life expectancy data of six different countries.</p>
-                            <div class="languages" role="presentation">
-                                <span>Python</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="p-three" class="project-wrapper-full box" role="presentation">
-                        <button id="close-p-three" class="project-close-btn" aria-label="Close project info"><i class="fas fa-times"></i></button>
-                        <header class="project">
-                            <img src="./resources/images/life_expectancy_gdp-300x120.png" alt="">
-                            <h4>GDP vs Life Expectancy</h4>
-                        </header>
-                        <div class="project-content" role="presentation">
-                            <p class="heading">General Info</p>
-                            <p>
-                                This data analysis project investigates if there is a correlation between the economic performance (GDP, Gross
-                                Domestic Product) of a country and the life expectancy of its citizen. The data includes the GDP and life expectancy of
-                                six countries from 2000 to 2015.<br>
-                                <br>
-                                The goal is to prepare, analyze and visualize the data with the help of several data analysis Python libraries 
-                                (e.g, Pandas, Matplotlib, Seaborn, Scipy).
-                            </p>
-                            <p class="heading">Technologies</p>
-                            <ul role="presentation">
-                                <li>Python - 3.8.5</li>
-                            </ul>
-                            <p id="view-p">View project on <a href="https://github.com/anlifi/life_expectancy_gdp" 
-                                target="_blank" aria-label="Project on GitHub opens in new tab">GitHub</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr>
-
-            <section id="contact">
-                <h2>Contact</h2>
-                <div class="contact-wrapper">
-                    <img id="profile-img2" src="./resources/images/profile-img2.jpg" alt="Angelina Fischer smiling over a burger">
-                    <div class="contact-content" role="presentation">
-                        <span>EMAIL ME</span>
-                        <a href="mailto:angelina.fischer93@gmail.com" aria-label="Opens default mail client"><i class="fas fa-envelope"></i></a>
-                        <div class="hr-sect">OR</div>
-                        <span>FIND ME ON</span>
-                        <div class="social-media">
-                            <a href="https://github.com/anlifi" target="_blank" aria-label="GitHub profile opens in new tab">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/angelina-fischer-a424111b0/" target="_blank" aria-label="LinkedIn profile opens in new tab">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/an.li.fi/" target="_blank" aria-label="Instagram profile opens in new tab">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/angelina.fischer.93" target="_blank" aria-label="Facebook profile opens in new tab">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-        
-        <footer>
-
-            <div class="created">
-                <h5>Created with ❤ in Darmstadt</h5>
+                <h4>Fun Fact 2</h4>
+                <p>
+                  I <strong>LOVE food</strong>. If I could, I would eat all day. Unfortunately,
+                  I am not immune against these things called calories...
+                </p>
+              </div>
             </div>
-            <div class="copyright">
-                <h5>&copy; 2021 Angelina Fischer</h5>
+            <div class="swiper-slide" role="presentation">
+              <div class="slide" role="presentation">
+                <div class="icon-wrapper" role="presentation">
+                  <i class="material-icons" aria-hidden="true">cake</i>
+                </div>
+                <h4>Fun Fact 3</h4>
+                <p>
+                  I like baking cakes almost as much as eating them (see fun fact 2).
+                  I baked at least <strong>17 cakes</strong> in 2020.<br>
+                  If you want to see some of them, go check out my Instagram
+                  <a href="https://www.instagram.com/an.li.fi/" target="_blank"
+                    aria-label="Instagram profile opens in new tab">an.li.fi</a>!
+                </p>
+              </div>
             </div>
+            <div class="swiper-slide" role="presentation">
+              <div class="slide" role="presentation">
+                <div class="icon-wrapper" role="presentation">
+                  <i class="fas fa-ruler" aria-hidden="true"></i>
+                </div>
+                <h4>Fun Fact 4</h4>
+                <p>
+                  I do not have OCD, but I really like things to be <strong>structured</strong> and
+                  <strong>ordered</strong>.
+                  My clothes are ordered by type and color and I cannot stand dirt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev" aria-label="Next" role="button"></div>
+          <div class="swiper-button-next" aria-label="Previous" role="button"></div>
+          <div class="swiper-pagination" role="tablist"></div>
+        </div>
+      </div>
+    </section>
 
-        </footer>
+    <hr>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js" type="text/javascript"></script>
-        <script src="./resources/js/delighters.js" type="text/javascript"></script>
-        <script src="./resources/js/script.js" type="text/javascript"></script>
-    </body>
+    <section id="skills" data-delighter>
+      <h2>Skills</h2>
+      <div class="skill" role="presentation">
+        <i class="fab fa-html5" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>HTML5</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line html" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>CSS3</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line css" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fab fa-js-square" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>JavaScript</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line js" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fab fa-react" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>React</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line react" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fab fa-python" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>Python</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line py" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fab fa-git-alt" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>Git</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line git" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill" role="presentation">
+        <i class="fas fa-database" aria-hidden="true"></i>
+        <div class="skill-bar" role="presentation">
+          <div class="info" role="presentation">
+            <span>SQL</span>
+          </div>
+          <div class="bar" role="presentation">
+            <div class="progress-line sql" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of my recent projects. <span>Click on the project tile for more info.</span></p>
+      <div class="projects-wrapper">
+        <div id="p-one-btn" class="project-wrapper-preview" role="presentation">
+          <img src="./resources/images/fortune-of-the-day-300x185.png" alt="">
+          <div class="project-content">
+            <h4>Fortune of the Day</h4>
+            <p>A random message generator that gives you “very” useful advice for your day!</p>
+            <div class="languages" role="presentation">
+              <span>JS</span>
+            </div>
+          </div>
+        </div>
+        <div id="p-one" class="project-wrapper-full box" role="presentation">
+          <button id="close-p-one" class="project-close-btn" aria-label="Close project info"><i
+              class="fas fa-times"></i></button>
+          <header class="project">
+            <img src="./resources/images/fortune-of-the-day-300x120.png" alt="">
+            <h4>Fortune of the Day</h4>
+          </header>
+          <div class="project-content" role="presentation">
+            <p class="heading">General Info</p>
+            <p>
+              This is my first small project running on Node.js using JavaScript, Git and GitHub.<br>
+              <br>
+              It is a random massage generator program. Everytime the program is run,
+              it prompts for the user's name and outputs today's date and a new (random) fortune of the day.
+            </p>
+            <p class="heading">Technologies</p>
+            <ul role="presentation">
+              <li>JavaScript - ECMAScript 2017</li>
+              <li>Node.js - 12.19.0</li>
+            </ul>
+            <p id="view-p">View project on <a href="https://github.com/anlifi/fortune_of_the_day" target="_blank"
+                aria-label="Project on GitHub opens in new tab">GitHub</a>
+            </p>
+          </div>
+        </div>
+        <div id="p-two-btn" class="project-wrapper-preview" role="presentation">
+          <img src="./resources/images/twitch-300x185.png" alt="">
+          <div class="project-content">
+            <h4>Twitch Data</h4>
+            <p>A little exploratory data analysis project using Twitch data.</p>
+            <div class="languages" role="presentation">
+              <span>Python</span>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+        <div id="p-two" class="project-wrapper-full box" role="presentation">
+          <button id="close-p-two" class="project-close-btn" aria-label="Close project info"><i
+              class="fas fa-times"></i></button>
+          <header class="project">
+            <img src="./resources/images/twitch-300x120.png" alt="">
+            <h4>Twitch Data</h4>
+          </header>
+          <div class="project-content" role="presentation">
+            <p class="heading">General Info</p>
+            <p>
+              This is my first little data analysis project using Twitch streaming and chat data (2015-01-01).<br>
+              <br>
+              The project is divided into two parts. One part is focused on analysing the data with SQL (SQLite).
+              The other part is focused on visualizing the data with Python (Matplotlib).
+            </p>
+            <p class="heading">Technologies</p>
+            <ul role="presentation">
+              <li>Python - 3.8.5</li>
+              <li>SQLite - 3.33.0</li>
+            </ul>
+            <p id="view-p">View project on <a href="https://github.com/anlifi/twitch" target="_blank"
+                aria-label="Project on GitHub opens in new tab">GitHub</a>
+            </p>
+          </div>
+        </div>
+        <div id="p-three-btn" class="project-wrapper-preview" role="presentation">
+          <img src="./resources/images/life_expectancy_gdp-300x185.png" alt="">
+          <div class="project-content">
+            <h4>GDP vs Life Expectancy</h4>
+            <p>A little exploratory data analysis project using GDP and life expectancy data of six different countries.
+            </p>
+            <div class="languages" role="presentation">
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div id="p-three" class="project-wrapper-full box" role="presentation">
+          <button id="close-p-three" class="project-close-btn" aria-label="Close project info"><i
+              class="fas fa-times"></i></button>
+          <header class="project">
+            <img src="./resources/images/life_expectancy_gdp-300x120.png" alt="">
+            <h4>GDP vs Life Expectancy</h4>
+          </header>
+          <div class="project-content" role="presentation">
+            <p class="heading">General Info</p>
+            <p>
+              This data analysis project investigates if there is a correlation between the economic performance (GDP,
+              Gross
+              Domestic Product) of a country and the life expectancy of its citizen. The data includes the GDP and life
+              expectancy of
+              six countries from 2000 to 2015.<br>
+              <br>
+              The goal is to prepare, analyze and visualize the data with the help of several data analysis Python
+              libraries
+              (e.g, Pandas, Matplotlib, Seaborn, Scipy).
+            </p>
+            <p class="heading">Technologies</p>
+            <ul role="presentation">
+              <li>Python - 3.8.5</li>
+            </ul>
+            <p id="view-p">View project on <a href="https://github.com/anlifi/life_expectancy_gdp" target="_blank"
+                aria-label="Project on GitHub opens in new tab">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <img id="profile-img2" src="./resources/images/profile-img2.jpg" alt="Angelina Fischer smiling over a burger">
+        <div class="contact-content" role="presentation">
+          <span>EMAIL ME</span>
+          <a href="mailto:angelina.fischer93@gmail.com" aria-label="Opens default mail client"><i
+              class="fas fa-envelope"></i></a>
+          <div class="hr-sect">OR</div>
+          <span>FIND ME ON</span>
+          <div class="social-media">
+            <a href="https://github.com/anlifi" target="_blank" aria-label="GitHub profile opens in new tab">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/angelina-fischer-a424111b0/" target="_blank"
+              aria-label="LinkedIn profile opens in new tab">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/an.li.fi/" target="_blank"
+              aria-label="Instagram profile opens in new tab">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/angelina.fischer.93" target="_blank"
+              aria-label="Facebook profile opens in new tab">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="created">
+      <h5>Created with ❤ in Darmstadt</h5>
+    </div>
+    <div class="copyright">
+      <h5>&copy; 2021 Angelina Fischer</h5>
+    </div>
+
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" type="text/javascript"></script>
+  <script src="./resources/js/delighters.js" type="text/javascript"></script>
+  <script src="./resources/js/script.js" type="text/javascript"></script>
+</body>
 
 </html>
